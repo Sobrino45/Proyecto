@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link th:href="@{/css/styles.css}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Panel de Administración</h1>
+        <p>Bienvenido, <span th:text="${admin.nombre}"></span></p>
+    </div>
+    <script th:src="@{/js/scripts.js}"></script>
+</body>
+</html>
