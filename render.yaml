@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: Proyecto
+    runtime: docker  # Usar Docker para aplicaciones Java
+    dockerfilePath: Dockerfile  # Especifica la ruta al Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        value: jdbc:mysql://host:puerto/eventosdb
+      - key: DATABASE_USERNAME
+        value: root
+      - key: DATABASE_PASSWORD
+        value: root
